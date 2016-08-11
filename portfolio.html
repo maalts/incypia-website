@@ -10,6 +10,9 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="js/javascript.js"></script>
         
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
     </head>
     
     <body>
@@ -45,19 +48,63 @@
         </div>
         
         <br><br>
+         <style>.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
+}</style>
+        <!-- References: https://github.com/fancyapps/fancyBox -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+<div class="container">
+	<div class="row">
+		<div class='list-group gallery'>
+            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                    <img class="img-responsive" alt="" src="http://placehold.it/400x400" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x320.png">
+                    <img class="img-responsive" alt="" src="http://placehold.it/1000x320" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x320.png">
+                    <img class="img-responsive" alt="" src="http://placehold.it/1000x320" />
+                    <div class='text-right'>
+                        <small class='text-muted'>Image Title</small>
+                    </div> <!-- text-right / end -->
+                </a>
+            </div> <!-- col-6 / end -->
+        </div> <!-- list-group / end -->
+	</div> <!-- row / end -->
+</div> <!-- container / end -->
+        
+        <script>$(document).ready(function(){
+    //FANCYBOX
+    //https://github.com/fancyapps/fancyBox
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+});
+   
+  </script>
+        
+        
+        <br><br>
         <h1 id="1">Hello World</h1>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><h1 id="2">hi</h1>
 
-<!--
-<form role="form" id="contact">
-  <div class="form-group">
-    <h1>Contact</h1>
-    <p><input type="text" class="form-control" placeholder="Name"/></p>
-    <p><input type="mail" class="form-control" placeholder="Mail"/></p>
-    <p><textarea name="" class="form-control" id="" rows="5" placeholder="Message"></textarea></p>
-  </div>
-  <button type="submit" class="form-control btn btn-default submit">Submit</button>
-</form>
--->
+       
+        
     </body>
 </html>
