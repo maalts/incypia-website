@@ -3,11 +3,22 @@
         <title>Incypia | Portfolio</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        
+        <!-- My Own CSS References -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css">
+        
+        <!-- Local Bootstrap References -->        
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        
+        <!-- Online Bootstrap References -->
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+        <!-- References for Image Gallery : https://github.com/fancyapps/fancyBox -->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,57 +58,83 @@
         </div>
         
         <br><br>
-         <style>.gallery
-{
-    display: inline-block;
-    margin-top: 20px;
-}</style>
-        <!-- References: https://github.com/fancyapps/fancyBox -->
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-
-<div class="container">
-	<div class="row">
-		<div class='list-group gallery'>
-            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
-                    <img class="img-responsive" alt="" src="http://placehold.it/400x400" />
-                    <div class='text-right'>
-                        <small class='text-muted'>Image Title</small>
-                    </div> <!-- text-right / end -->
-                </a>
-            </div> <!-- col-6 / end -->
-            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x320.png">
-                    <img class="img-responsive" alt="" src="http://placehold.it/1000x320" />
-                    <div class='text-right'>
-                        <small class='text-muted'>Image Title</small>
-                    </div> <!-- text-right / end -->
-                </a>
-            </div> <!-- col-6 / end -->
-            <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x320.png">
-                    <img class="img-responsive" alt="" src="http://placehold.it/1000x320" />
-                    <div class='text-right'>
-                        <small class='text-muted'>Image Title</small>
-                    </div> <!-- text-right / end -->
-                </a>
-            </div> <!-- col-6 / end -->
-        </div> <!-- list-group / end -->
-	</div> <!-- row / end -->
-</div> <!-- container / end -->
         
-        <script>$(document).ready(function(){
-    //FANCYBOX
-    //https://github.com/fancyapps/fancyBox
-    $(".fancybox").fancybox({
-        openEffect: "none",
-        closeEffect: "none"
-    });
-});
+        <style>
+             .gallery
+             {
+                display: inline-block;
+                margin-top: 20px;
+            }
+        </style>
+
+
+        <div class="container">
+            <div class="row">
+                <div class='list-group gallery'>
+                    
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                        <img class="img-responsive" alt="" src="http://placehold.it/400x400" />
+                        <div class='text-right'>
+                            <small class='text-muted'>Image Title</small>
+                        </div> <!-- text-right / end -->
+                        </a>
+                    </div>
+                    
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                        <img class="img-responsive" alt="" src="http://placehold.it/400x400" />
+                        <div class='text-right'>
+                            <small class='text-muted'>Image Title</small>
+                        </div> <!-- text-right / end -->
+                        </a>
+                    </div>
+                    
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                        <img class="img-responsive" alt="" src="http://placehold.it/400x400" />
+                        <div class='text-right'>
+                            <small class='text-muted'>Image Title</small>
+                        </div> <!-- text-right / end -->
+                        </a>
+                    </div>
+                    
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                        <img class="img-responsive" alt="" src="http://placehold.it/400x400" />
+                        <div class='text-right'>
+                            <small class='text-muted'>Image Title</small>
+                        </div> <!-- text-right / end -->
+                        </a>
+                    </div>
+                    
+                    <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                        <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                        <img class="img-responsive" alt="" src="http://placehold.it/400x400" />
+                        <div class='text-right'>
+                            <small class='text-muted'>Image Title</small>
+                        </div> <!-- text-right / end -->
+                        </a>
+                    </div>
+                    
+                </div> <!-- list-group / end -->
+	       </div> <!-- row / end -->
+        </div> <!-- container / end -->
+        
+        <script>
             
-   
-  </script>
+            $(document).ready(function(){
+                
+                //FANCYBOX
+                //https://github.com/fancyapps/fancyBox
+                $(".fancybox").fancybox({
+                    openEffect: "none",
+                    closeEffect: "none"
+                });
+                
+            }); 
+            
+        </script>
         
         
         <br><br>
