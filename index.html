@@ -21,8 +21,11 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
         <!-- References for Image Gallery : https://github.com/fancyapps/fancyBox -->
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+        
+        <!-- Latest Jquery -->
+<!--        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>-->
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,15 +33,17 @@
         <style>
             body {position: relative;color: aliceblue;font-family: 'Montserrat', sans-serif;}
 
-            #main {padding-top:80px;height:1000px;background-color: #1E88E5;}
+            #main {padding-top:80px;height:1000px;background-color: #4C5152;}
 
-            #portfolio-clothing {padding-top:100px;padding-bottom:130px;background-color: #673ab7;}
+            #portfolio-clothing {padding-top:100px;padding-bottom:130px;background-color: #0C4663;}
 
-            #portfolio-portraits {padding-top:100px;padding-bottom:130px;background-color: #ff9800;}
+            #portfolio-portraits {padding-top:100px;padding-bottom:130px;background-color: #23647A;}
 
-            #portfolio-roofs {padding-top:100px;padding-bottom:130px;background-color: #00bcd4;}
+            #portfolio-urban-decay {padding-top:100px;padding-bottom:130px;background-color: #438AA0;}
+            
+            #portfolio-jewelry {padding-top:100px;padding-bottom:130px;background-color: #77B5D6;} 
 
-            #contact-form {padding-top:100px;padding-bottom:70px;margin: auto; background-color: #009688;}}
+            #contact-form {padding-top:100px;padding-bottom:170px;background-color: #B1EDE8;}}
 
             .head-nav {font-size: 300px;}
 
@@ -76,7 +81,9 @@
                         
                                 <li><a href="#portfolio-clothing">Clothing</a></li>
                                 <li><a href="#portfolio-portraits">Portraits</a></li>
-                                <li><a href="#portfolio-roofs">Rooftops & Abandoned Places</a></li>
+                                <li><a href="#portfolio-urban-decay">Urban Decay</a></li>
+                                <li><a href="#portfolio-jewelry">Jewelry</a></li>
+                                
                         
                             </ul>
                         </li>
@@ -106,7 +113,15 @@
 <!--        End Nav  -->
         
         <div id="main">
-            <h1>Hello Worlds</h1>
+            <div id='main-left-column'  class="animated fadeInLeft text-left"  style="margin-left:200px;margin-top:50px;max-width:400px;float:left;">
+            <h1>Hello World</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra nec tellus ac luctus. Curabitur quis leo urna. Pellentesque id enim condimentum, venenatis mauris non, tincidunt metus. Praesent est ligula, iaculis ac interdum ac, tincidunt et sem. Praesent dictum elit non odio convallis, ut tempus sapien condimentum. Ut blandit ullamcorper gravida. Sed fringilla condimentum purus, vel blandit justo varius vel. Quisque vitae semper metus. Vivamus tincidunt nec massa vitae tempor. Phasellus pellentesque purus eget aliquam fringilla. Donec euismod mattis arcu, lobortis consectetur urna fringilla accumsan. Vestibulum faucibus, orci nec vehicula congue, ipsum ipsum maximus tellus, sit amet porta lectus arcu non turpis. Vivamus dictum viverra dui ac egestas. Praesent tincidunt placerat odio, non blandit dui. Etiam eget nisi congue, euismod urna at, viverra risus. Nam vitae fringilla nibh.</p>
+                </div>
+            
+            <div id='main-right-column'  class="animated fadeInRight text-right"  style="margin-right:200px;margin-top:50px;max-width:400px;float:right;">
+            <h1>Hello World</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra nec tellus ac luctus. Curabitur quis leo urna. Pellentesque id enim condimentum, venenatis mauris non, tincidunt metus. Praesent est ligula, iaculis ac interdum ac, tincidunt et sem. Praesent dictum elit non odio convallis, ut tempus sapien condimentum. Ut blandit ullamcorper gravida. Sed fringilla condimentum purus, vel blandit justo varius vel. Quisque vitae semper metus. Vivamus tincidunt nec massa vitae tempor. Phasellus pellentesque purus eget aliquam fringilla. Donec euismod mattis arcu, lobortis consectetur urna fringilla accumsan. Vestibulum faucibus, orci nec vehicula congue, ipsum ipsum maximus tellus, sit amet porta lectus arcu non turpis. Vivamus dictum viverra dui ac egestas. Praesent tincidunt placerat odio, non blandit dui. Etiam eget nisi congue, euismod urna at, viverra risus. Nam vitae fringilla nibh.</p>
+                </div>
         </div>
         
         <div id="portfolio-clothing">
@@ -125,73 +140,65 @@
                     <div class='list-group gallery'>
                     
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="clothing-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>                 
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="clothing-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="clothing-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="clothing-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="clothing-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>                 
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="clothing-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="clothing-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="clothing-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
@@ -199,17 +206,6 @@
                     </div> <!-- list-group / end -->
 	           </div> <!-- row / end -->
             </div> <!-- container / end -->
-        
-            <script>
-                $(document).ready(function(){
-                    //FANCYBOX
-                    //https://github.com/fancyapps/fancyBox
-                    $(".fancybox").fancybox({
-                        openEffect: "none",
-                        closeEffect: "none"
-                    });
-                });    
-            </script>
         
 <!--        End Gallery  -->
             
@@ -231,73 +227,65 @@
                     <div class='list-group gallery'>
                     
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>                 
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>                 
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
@@ -305,25 +293,14 @@
                     </div> <!-- list-group / end -->
 	           </div> <!-- row / end -->
             </div> <!-- container / end -->
-        
-            <script>
-                $(document).ready(function(){
-                    //FANCYBOX
-                    //https://github.com/fancyapps/fancyBox
-                    $(".fancybox").fancybox({
-                        openEffect: "none",
-                        closeEffect: "none"
-                    });
-                });    
-            </script>
-        
+
 <!--        End Gallery  -->
             
             </div>
             
-        <div id="portfolio-roofs">
+        <div id="portfolio-urban-decay">
         <br><br>
-        <h2 class="text-center">Rooftops & Abandoned Places</h2>
+        <h2 class="text-center">Urban Decay</h2>
         
 <!--    Gallery with square previews and click to zoom    -->
         
@@ -337,73 +314,65 @@
                     <div class='list-group gallery'>
                     
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>                 
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>                 
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="ligthbox" href="http://placehold.it/1000x666.666666667.png">
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
                             <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
                             <div class='text-right'>
-                                <small class='text-muted'>Image Title</small>
                             </div> <!-- text-right / end -->
                             </a>
                         </div>
@@ -412,20 +381,98 @@
 	           </div> <!-- row / end -->
             </div> <!-- container / end -->
         
-            <script>
-                $(document).ready(function(){
-                    //FANCYBOX
-                    //https://github.com/fancyapps/fancyBox
-                    $(".fancybox").fancybox({
-                        openEffect: "none",
-                        closeEffect: "none"
-                    });
-                });    
-            </script>
+ 
         
 <!--        End Gallery  -->
             
             </div>
+        
+                <div id="portfolio-jewelry">
+        <br><br>
+        <h2 class="text-center">Jewelry</h2>
+        
+<!--    Gallery with square previews and click to zoom    -->
+        
+            <style>
+                .gallery{display: inline-block;margin-top: 20px;}
+            </style>
+
+
+            <div class="container">
+                <div class="row">
+                    <div class='list-group gallery'>
+                    
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
+                            <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
+                            <div class='text-right'>
+                            </div> <!-- text-right / end -->
+                            </a>
+                        </div>                 
+                        
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
+                            <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
+                            <div class='text-right'>
+                            </div> <!-- text-right / end -->
+                            </a>
+                        </div>
+                        
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
+                            <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
+                            <div class='text-right'>
+                            </div> <!-- text-right / end -->
+                            </a>
+                        </div>
+                        
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
+                            <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
+                            <div class='text-right'>
+                            </div> <!-- text-right / end -->
+                            </a>
+                        </div>
+                        
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
+                            <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
+                            <div class='text-right'>
+                            </div> <!-- text-right / end -->
+                            </a>
+                        </div>                 
+                        
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
+                            <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
+                            <div class='text-right'>
+                            </div> <!-- text-right / end -->
+                            </a>
+                        </div>
+                        
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
+                            <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
+                            <div class='text-right'>
+                            </div> <!-- text-right / end -->
+                            </a>
+                        </div>
+                        
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
+                            <img class="img-responsive" alt="" src="http://placehold.it/1000x666.666666667.png">
+                            <div class='text-right'>
+                            </div> <!-- text-right / end -->
+                            </a>
+                        </div>
+                    
+                    </div> <!-- list-group / end -->
+	           </div> <!-- row / end -->
+            </div> <!-- container / end -->
+        
+        
+<!--        End Gallery  -->
+        </div>
         
 <!--        End Portfolio Section   -->
             
@@ -501,6 +548,16 @@
                     }  // End if
                 });
             });
+            $(document).ready(function(){
+                    //FANCYBOX
+                    //https://github.com/fancyapps/fancyBox
+                    $(".fancybox").fancybox({
+                        openEffect: "elastic",
+                        closeEffect: "elastic",
+                        openSpeed: 100,
+                        closeSpeed: 100
+                    });
+                }); 
         </script>
         
     </body>
