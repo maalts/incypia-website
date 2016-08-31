@@ -26,6 +26,10 @@
         
         <!-- Latest Jquery -->
 <!--        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+<!--        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+
+<script src="circle-progress.js"></script>
+
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,7 +37,7 @@
         <style>
             body {position: relative;color: aliceblue;font-family: 'Montserrat', sans-serif;}
 
-            #main {padding-top:80px;height:1000px;background-color: #4C5152;}
+            #main {padding-top:150px;padding-bottom:150px;background-color: #4C5152;}
 
             #portfolio-clothing {padding-top:100px;padding-bottom:130px;background-color: #0C4663;}
 
@@ -43,7 +47,7 @@
             
             #portfolio-jewelry {padding-top:100px;padding-bottom:130px;background-color: #77B5D6;} 
 
-            #contact-form {padding-top:100px;padding-bottom:170px;background-color: #B1EDE8;}}
+            #contact-form {padding-top:100px;padding-bottom:170px;background-color: #6FB9B9;}}
 
             .head-nav {font-size: 300px;}
 
@@ -81,7 +85,9 @@
                         
                                 <li><a href="#portfolio-clothing">Clothing</a></li>
                                 <li><a href="#portfolio-portraits">Portraits</a></li>
+                                <li role="separator" class="divider"></li>
                                 <li><a href="#portfolio-urban-decay">Urban Decay</a></li>
+                                <li role="separator" class="divider"></li>
                                 <li><a href="#portfolio-jewelry">Jewelry</a></li>
                                 
                         
@@ -112,17 +118,83 @@
         
 <!--        End Nav  -->
         
+<!-- Begin About Section -->
+        
         <div id="main">
-            <div id='main-left-column'  class="animated fadeInLeft text-left"  style="margin-left:200px;margin-top:50px;max-width:400px;float:left;">
-            <h1>Hello World</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra nec tellus ac luctus. Curabitur quis leo urna. Pellentesque id enim condimentum, venenatis mauris non, tincidunt metus. Praesent est ligula, iaculis ac interdum ac, tincidunt et sem. Praesent dictum elit non odio convallis, ut tempus sapien condimentum. Ut blandit ullamcorper gravida. Sed fringilla condimentum purus, vel blandit justo varius vel. Quisque vitae semper metus. Vivamus tincidunt nec massa vitae tempor. Phasellus pellentesque purus eget aliquam fringilla. Donec euismod mattis arcu, lobortis consectetur urna fringilla accumsan. Vestibulum faucibus, orci nec vehicula congue, ipsum ipsum maximus tellus, sit amet porta lectus arcu non turpis. Vivamus dictum viverra dui ac egestas. Praesent tincidunt placerat odio, non blandit dui. Etiam eget nisi congue, euismod urna at, viverra risus. Nam vitae fringilla nibh.</p>
-                </div>
             
-            <div id='main-right-column'  class="animated fadeInRight text-right"  style="margin-right:200px;margin-top:50px;max-width:400px;float:right;">
-            <h1>Hello World</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra nec tellus ac luctus. Curabitur quis leo urna. Pellentesque id enim condimentum, venenatis mauris non, tincidunt metus. Praesent est ligula, iaculis ac interdum ac, tincidunt et sem. Praesent dictum elit non odio convallis, ut tempus sapien condimentum. Ut blandit ullamcorper gravida. Sed fringilla condimentum purus, vel blandit justo varius vel. Quisque vitae semper metus. Vivamus tincidunt nec massa vitae tempor. Phasellus pellentesque purus eget aliquam fringilla. Donec euismod mattis arcu, lobortis consectetur urna fringilla accumsan. Vestibulum faucibus, orci nec vehicula congue, ipsum ipsum maximus tellus, sit amet porta lectus arcu non turpis. Vivamus dictum viverra dui ac egestas. Praesent tincidunt placerat odio, non blandit dui. Etiam eget nisi congue, euismod urna at, viverra risus. Nam vitae fringilla nibh.</p>
+            <div class="row text-center">
+                <div class="col-xs-2"></div>
+                <div class="animated fadeInLeft col-sm-6"  style="max-width:500px;">
+                    <h1>About Me</h1>
+                    <br><br>
+                    <p>My name is Max Alt, and I am an independant photographer and programmer. Below are some of my best works in 4 different categories: <a style="color:#C9A55F" href="#portfolio-clothing">Clothing and Other Fashion</a>, <a style="color:#C9A55F" href="#portfolio-portraits">Portraiture</a>, <a style="color:#C9A55F" href="#portfolio-urban-decay">Urban Decay</a>, and <a style="color:#C9A55F" href="#portfolio-jewelry">Close Up Jewelry Photography</a>. </p>
+                    <p>On the right (or below, depending on what device you're using) is a quick overview of my skills in web development as well as photogtaphy. As  an tangible example of my programming skills, I can tell you that this site was built from scratch by me.</p>
+                    <p>If you would like to see more of my photography, you can head on over to my <a style="color:#C9A55F" href="http://www.instagram.com/incypia">Instagram</a> or <a style="color:#C9A55F" href="http://www.facebook.com/incypia">Facebook</a>. Otherwise feel free to scroll through and look at my photos here.</p>
+                    <p>If you would like to <a style="color:#C9A55F" href="#contact-form">Contact Me</a> about working together, just click the button in the top right, or scroll to the very bottom of this page.</p>
                 </div>
+
+                <!-- Add the extra clearfix for only the required viewport -->
+                <div class="clearfix visible-xs-block"></div>
+
+                <div class="animated fadeInRight col-sm-6" style="max-width:500px;">
+                    <h1>Skillset</h1>
+                    <br>
+                    <div class="o-progress-circle o-progress-circle--rounded">
+                        <div class="o-progress-circle__number">
+                          <span data-pourcent>70</span><em>%</em>
+                        </div>
+                        <div class="o-progress-circle__fill">
+                            <svg class="icon" viewBox="0 0 40 40">
+                                <circle r="15.9154943092" cy="20" cx="20" />
+                                <circle r="15.9154943092" cy="20" cx="20" stroke-dashoffset="30" transform="rotate(-90,20,20)" />
+                            </svg>
+                            <p>HTML</p>
+                        </div>
+                    </div>
+                    <div class="o-progress-circle o-progress-circle--rounded">
+                        <div class="o-progress-circle__number">
+                          <span data-pourcent>65</span><em>%</em>
+                        </div>
+                        <div class="o-progress-circle__fill">
+                            <svg class="icon" viewBox="0 0 40 40">
+                                <circle r="15.9154943092" cy="20" cx="20" />
+                                <circle r="15.9154943092" cy="20" cx="20" stroke-dashoffset="35" transform="rotate(-90,20,20)" />
+                            </svg>
+                            <p>CSS</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="o-progress-circle o-progress-circle--rounded">
+                        <div class="o-progress-circle__number">
+                          <span data-pourcent>80</span><em>%</em>
+                        </div>
+                        <div class="o-progress-circle__fill">
+                            <svg class="icon" viewBox="0 0 40 40">
+                                <circle r="15.9154943092" cy="20" cx="20" />
+                                <circle r="15.9154943092" cy="20" cx="20" stroke-dashoffset="20" transform="rotate(-90,20,20)" />
+                            </svg>
+                            <p>Camera Operations</p>
+                        </div>
+                    </div>
+                    <div class="o-progress-circle o-progress-circle--rounded">
+                        <div class="o-progress-circle__number">
+                          <span data-pourcent>85</span><em>%</em>
+                        </div>
+                        <div class="o-progress-circle__fill">
+                            <svg class="icon" viewBox="0 0 40 40">
+                                <circle r="15.9154943092" cy="20" cx="20" />
+                                <circle r="15.9154943092" cy="20" cx="20" stroke-dashoffset="15" transform="rotate(-90,20,20)" />
+                            </svg>
+                            <p>Adobe Lightroom</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-2"></div>
+            </div>
+            
         </div>
+        
+<!-- End About Section -->
         
         <div id="portfolio-clothing">
             <br><br>
@@ -212,8 +284,8 @@
             </div>
         
         <div id="portfolio-portraits">
-        <br><br>
-        <h2 class="text-center">Portraits</h2>
+            <br><br>
+            <h2 class="text-center">Portraits</h2>
         
 <!--    Gallery with square previews and click to zoom    -->
         
@@ -299,8 +371,8 @@
             </div>
             
         <div id="portfolio-urban-decay">
-        <br><br>
-        <h2 class="text-center">Urban Decay</h2>
+            <br><br>
+            <h2 class="text-center">Urban Decay</h2>
         
 <!--    Gallery with square previews and click to zoom    -->
         
@@ -387,9 +459,9 @@
             
             </div>
         
-                <div id="portfolio-jewelry">
-        <br><br>
-        <h2 class="text-center">Jewelry</h2>
+        <div id="portfolio-jewelry">
+            <br><br>
+            <h2 class="text-center">Jewelry</h2>
         
 <!--    Gallery with square previews and click to zoom    -->
         
@@ -472,6 +544,7 @@
         
         
 <!--        End Gallery  -->
+            
         </div>
         
 <!--        End Portfolio Section   -->
@@ -512,14 +585,8 @@
 
             
         </div>
-        
-<!--
-        <div id="contact-form">
-            
 
-            <a href="http://www.123contactform.com/form-2167489/Contact-Lead-Form" ><img border="0" src="https://cdn-main.123contactform.com/images3/contactbutton.gif"></a>
-        </div>
--->
+<!-- End Contact Section -->
            
         <script>
             $(document).ready(function(){
