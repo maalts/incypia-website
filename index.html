@@ -1,6 +1,10 @@
 <html>
     <head>
         
+        <!--    Favicon    -->
+        <link rel="shortcut icon" href="/icons/favicon_second.ico" type="image/x-icon">
+<!--        <link rel="icon" href="/icons/favicon_animate.ico" type="image/x-icon">-->
+        
         <title>Incypia | Home</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,18 +25,18 @@
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         
         <!-- References for Image Gallery : https://github.com/fancyapps/fancyBox -->
-        <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-        <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
         
         <!-- Latest Jquery -->
-<!--        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>-->
-<!--        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+        <!--        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+        <!--        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
         
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <style>
-            body {position: relative;color: aliceblue;font-family: 'Montserrat', sans-serif;}
+        <style>    
+            body {position: relative;color: aliceblue;font-family: 'Montserrat', sans-serif;overflow-x: hidden;}
 
             #main {padding-top:150px;padding-bottom:150px;background-color: #4C5152;}
 
@@ -50,34 +54,42 @@
 
             .head-nav {font-size: 20px;}
 
-            .incypia-title-brand {font-size: 30px;margin: 25px;}
+            .incypia-title-brand {font-size: 20px;margin: 25px;}
             
-            .main-navbar-section {margin: 25px;font-size: 15px;}
+            .main-navbar-section {margin: 25px;font-size: 10px;}
         </style>
         
     </head>
     
-    <body class="scrolly" id="top">
+    <body class="scrolly" id="top" style="-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;">
         
 <!--    Responsive navbar that is always visible at top  -->
-        
+        <div  data-target="#scrollspy"></div>
         <nav class="navbar navbar-inverse navbar-fixed-top">
             
-            <div class="container">
+            <div class="container" id="scrollspy">
                 
                 <div class="navbar-header head-nav">
-                    <button style="color:dodgerblue;margin:27px;" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#scrollspy">
-                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    <button style="color:dodgerblue;margin:27px;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".burger-menu" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
                     </button>
                     <p class="active navbar-brand incypia-title-brand"><a style="text-decoration:none;color:aliceblue;" href="#top">Incypia</a></p>
                 </div>
                 
-                <div class="collapse navbar-collapse navbar-right main-navbar-section" id="scrollspy">
+                <div class="collapse navbar-collapse navbar-right main-navbar-section burger-menu" id="scrollspy">
                     <ul class="nav navbar-nav">
                 
                         <li class=""><a href="#top">Home</a></li>
                         <li role="presentation" class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button" aria-haspopup="true" aria-expanded="false">
                                 Portfolio <span class="glyphicon glyphicon-chevron-down"></span>
                             </a>
                             <ul class="dropdown-menu">
@@ -110,21 +122,21 @@
         
         <div id="main">
             
-            <div class="row text-center" data-target="#scrollspy2">
+            <div class="row text-left">
                 <div class="col-xs-2"></div>
-                <div class="animated fadeInLeft col-sm-6"  style="max-width:500px;" id="scrollspy2">
-                    <h1>About Me</h1>
+                <div class="animated fadeInLeft col-sm-6"  style="max-width:500px;cursor:default;margin:10px;" id="scrollspy">
+                    <h1 class="text-center">About Me</h1>
                     <br><br>
-                    <h5>My name is Max Alt, and I am an independant photographer and programmer. Below are some examples of the work that other clients have recieved from me in 3 different categories: <a style="color:#C9A55F" href="#portfolio-fashion"><img src="img/shirt-512.png" height="13" width="13"> Fashion</a>, <a style="color:#C9A55F" href="#portfolio-portraits"><img src="img/i23-01-32.png" height="16" width="16"> Portraiture</a>, and <a style="color:#C9A55F" href="#portfolio-jewelry"><i class="fa fa-diamond" aria-hidden="true"></i> Jewelry</a>, as well as examples of work I have done on my own, such as <a style="color:#C9A55F" href="#portfolio-urban-decay"> <img src="img/realestate-go-10-512.png" height="14" width="14">Urban Decay</a>, and <a style="color:#C9A55F" href="#portfolio-cityscapes"><i class="fa fa-building" aria-hidden="true"></i> Cityscapes</a> </h5>
-                    <h5>On the right (or below, depending on what device you're using) is a quick overview of my skills in web development as well as photogtaphy. As  an tangible example of my programming skills, I can tell you that this site was built from scratch by me.</h5>
-                    <h5>If you would like to see more of my photography, you can head on over to my <a style="color:#C9A55F" href="http://www.instagram.com/incypia"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a> or <a style="color:#C9A55F" href="http://www.facebook.com/incypia"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>. Otherwise feel free to scroll through and look at my photos here.</h5>
-                    <h5>If you would like to <a style="color:#C9A55F" href="#contact-form"><i class="fa fa-envelope" aria-hidden="true"></i> Contact Me</a> about working together, just click the button in the top right, or scroll to the very bottom of this page.</h5>
+                    <h5>My name is Max Alt, and I am an independant photographer and programmer. Below are some examples of the work that other clients have recieved from me in 3 different categories: <a style="color:#C9A55F" href="#portfolio-fashion"><img src="icons/shirt.png" height="13" width="13"> Fashion</a>, <a style="color:#C9A55F" href="#portfolio-portraits"><img src="icons/portrait.png" height="16" width="16"> Portraiture</a>, and <a style="color:#C9A55F" href="#portfolio-jewelry"><i class="fa fa-diamond" aria-hidden="true"></i> Jewelry</a>, as well as examples of work I have done on my own, such as <a style="color:#C9A55F" href="#portfolio-urban-decay"> <img src="icons/urbex.png" height="14" width="14">Urban Decay</a>, and <a style="color:#C9A55F" href="#portfolio-cityscapes"><i class="fa fa-building" aria-hidden="true"></i> Cityscapes</a> </h5><br>
+                    <h5>On the right (or below, depending on what device you're using) is a quick overview of my skills in web development as well as photogtaphy. As  an tangible example of my programming skills, I can tell you that this site was built from scratch by me.</h5><br>
+                    <h5>If you would like to see more of my photography, you can head on over to my <a style="color:#C9A55F" href="http://www.instagram.com/incypia"><span class="fa fa-instagram" aria-hidden="true"></span> Instagram</a> or <a style="color:#C9A55F" href="http://www.facebook.com/incypia"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>. Otherwise feel free to scroll through and look at my photos here.</h5><br>
+                    <h5>If you would like to <a style="color:#C9A55F" href="#contact-form"><i class="fa fa-envelope" aria-hidden="true"></i> Contact Me</a> about working together, just click the button in the top right, or scroll to the very bottom of this page.</h5><br>
                 </div>
 
                 <!-- Add the extra clearfix for only the required viewport -->
                 <div class="clearfix visible-xs-block"></div>
 
-                <div class="animated fadeInRight col-sm-6" style="max-width:500px;">
+                <div class="animated text-center fadeInRight col-sm-6" style="max-width:500px; margin:10px;">
                     <h1>Skillset</h1>
                     <br>
                     <div class="o-progress-circle o-progress-circle--rounded">
@@ -136,7 +148,7 @@
                                 <circle r="15.9154943092" cy="20" cx="20" />
                                 <circle r="15.9154943092" cy="20" cx="20" stroke-dashoffset="30" transform="rotate(-90,20,20)" />
                             </svg>
-                            <p>HTML</p>
+                            <p>HTML <img src="icons/html.png" style="padding-bottom:4px;" height="35" width="35"></p>
                         </div>
                     </div>
                     <div class="o-progress-circle o-progress-circle--rounded">
@@ -148,10 +160,36 @@
                                 <circle r="15.9154943092" cy="20" cx="20" />
                                 <circle r="15.9154943092" cy="20" cx="20" stroke-dashoffset="35" transform="rotate(-90,20,20)" />
                             </svg>
-                            <p>CSS</p>
+                            <p>CSS  <img src="icons/css.png" style="padding-bottom:4px;" height="35" width="35"></p>
                         </div>
                     </div>
-                    <br>
+                    <div class="o-progress-circle o-progress-circle--rounded">
+                        <div class="o-progress-circle__number">
+                          <span data-pourcent>35</span><em>%</em>
+                        </div>
+                        <div class="o-progress-circle__fill">
+                            <svg class="icon" viewBox="0 0 40 40">
+                                <circle r="15.9154943092" cy="20" cx="20" />
+                                <circle r="15.9154943092" cy="20" cx="20" stroke-dashoffset="65" transform="rotate(-90,20,20)" />
+                            </svg>
+                            <p>Ruby  <img src="icons/ruby.png" style="padding-bottom:-2px;" height="35" width="35"></p>
+                        </div>
+                    </div>
+                    
+                    <br><br><br><br>
+                    
+                    <div class="o-progress-circle o-progress-circle--rounded">
+                        <div class="o-progress-circle__number">
+                          <span data-pourcent>25</span><em>%</em>
+                        </div>
+                        <div class="o-progress-circle__fill">
+                            <svg class="icon" viewBox="0 0 40 40">
+                                <circle r="15.9154943092" cy="20" cx="20" />
+                                <circle r="15.9154943092" cy="20" cx="20" stroke-dashoffset="75" transform="rotate(-90,20,20)" />
+                            </svg>
+                            <p>JavaScript  <img src="icons/java.png" style="padding-bottom:6px;" height="30" width="30"><p style="font-size:2px;color:#4C5152;">aaaaaa</p></p>
+                        </div>
+                    </div>
                     <div class="o-progress-circle o-progress-circle--rounded">
                         <div class="o-progress-circle__number">
                           <span data-pourcent>80</span><em>%</em>
@@ -161,7 +199,7 @@
                                 <circle r="15.9154943092" cy="20" cx="20" />
                                 <circle r="15.9154943092" cy="20" cx="20" stroke-dashoffset="20" transform="rotate(-90,20,20)" />
                             </svg>
-                            <p>Camera Operations</p>
+                            <p>Camera <img src="icons/camop.png" style="padding-bottom:4px;" height="25" width="20">Operations</p>
                         </div>
                     </div>
                     <div class="o-progress-circle o-progress-circle--rounded">
@@ -173,9 +211,10 @@
                                 <circle r="15.9154943092" cy="20" cx="20" />
                                 <circle r="15.9154943092" cy="20" cx="20" stroke-dashoffset="15" transform="rotate(-90,20,20)" />
                             </svg>
-                            <p>Adobe Lightroom</p>
+                            <p>Adobe <img src="icons/lr.png" style="padding-bottom:4px;" height="25" width="20">Lightroom</p>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-xs-2"></div>
             </div>
@@ -193,83 +232,125 @@
             <style>
                 .gallery{display: inline-block;margin-top: 20px;}
             </style>
-
-
-            <div class="container">
+            
+            
+<!--
+            <div oncontextmenu="return false" class="container">
                 <div class="row">
                     <div class='list-group gallery'>
-                    
+                        
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="https://www.dropbox.com/s/ezhargdp6edw2wu/fashion1.jpg?raw=1">
+                            <img class="img-responsive" alt="" src="https://www.dropbox.com/s/x4nw1o7r84wpf48/fashion1sm.JPG?raw=1">
                             </a>
                         </div>                 
-                        
+
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="https://www.dropbox.com/s/kor62m3vyhz9qj0/fashion2.jpg?raw=1">
+                            <img class="img-responsive" alt="" src="https://www.dropbox.com/s/v29vjm2mwcxkcf4/fashion2sm.JPG?raw=1">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="https://www.dropbox.com/s/4bliwubyksnc5gb/fashion3.jpg?raw=1">
+                            <img class="img-responsive" alt="" src="https://www.dropbox.com/s/arjxj9sbhgjkoef/fashion3sm.JPG?raw=1">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="https://www.dropbox.com/s/txej2bk26cm1c88/fashion4.jpg?raw=1">
+                            <img class="img-responsive" alt="" src="https://www.dropbox.com/s/awyaeo6tno0mq55/fashion4sm.JPG?raw=1">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
-                            </a>
-                        </div>                 
-                        
-                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="https://www.dropbox.com/s/vgul8vps7ke5vfi/fashion5.jpg?raw=1">
+                            <img class="img-responsive" alt="" src="https://www.dropbox.com/s/v8xmwi9ffa5ccpa/fashion5sm.JPG?raw=1">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="https://www.dropbox.com/s/hyb27hcdo6jl5d7/fashion6.jpg?raw=1">
+                            <img class="img-responsive" alt="" src="https://www.dropbox.com/s/3oxy7pr4oegd3h9/fashion6sm.JPG?raw=1">
                             </a>
                         </div>
-                        
+
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="https://www.dropbox.com/s/21z1vyby6oap6d0/fashion7.jpg?raw=1">
+                            <img class="img-responsive" alt="" src="https://www.dropbox.com/s/2lz2ihbs7nh8df4/fashion7sm.jpg?raw=1">
+                            </a>
+                        </div>
+
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="https://www.dropbox.com/s/ndpxbd2jd5uydc9/fashion8.jpg?raw=1">
+                            <img class="img-responsive" alt="" src="https://www.dropbox.com/s/resstmmacbxtahj/fashion8sm.jpg?raw=1">
                             </a>
                         </div>
                     
-                    </div> <!-- list-group / end -->
-	           </div> <!-- row / end -->
-            </div> <!-- container / end -->
+                    </div>
+	           </div>
+            </div>
+-->
+            
+            <div oncontextmenu="return false" class="container">
+                <div class="row">
+                    <div class='list-group gallery'>
+                        
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473014971/Fashion/fashion1.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473014971/Fashion/fashion1.jpg">
+                            </a>
+                        </div>                 
+
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015150/Fashion/fashion2.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015150/Fashion/fashion2.jpg">
+                            </a>
+                        </div>
+                        
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015150/Fashion/fashion3.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015150/Fashion/fashion3.jpg">
+                            </a>
+                        </div>
+                        
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015103/Fashion/fashion4.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015103/Fashion/fashion4.jpg">
+                            </a>
+                        </div>
+                        
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473014976/Fashion/fashion5.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473014976/Fashion/fashion5.jpg">
+                            </a>
+                        </div>
+                        
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473014982/Fashion/fashion6.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473014982/Fashion/fashion6.jpg">
+                            </a>
+                        </div>
+
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473014979/Fashion/fashion7.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473014979/Fashion/fashion7.jpg">
+                            </a>
+                        </div>
+
+                        <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
+                            <a class="thumbnail fancybox" rel="fashion-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473014979/Fashion/fashion8.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473014979/Fashion/fashion8.jpg">
+                            </a>
+                        </div>
+                    
+                    </div>
+	           </div>
+            </div>
         
 <!--        End Gallery  -->
             
-            </div>
+        </div>
         
         <div id="portfolio-portraits">
             <br><br>
@@ -282,71 +363,55 @@
             </style>
 
 
-            <div class="container">
+            <div oncontextmenu="return false" class="container">
                 <div class="row">
                     <div class='list-group gallery'>
                     
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015176/Portraits/portrait1.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015176/Portraits/portrait1.jpg">
                             </a>
                         </div>                 
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015175/Portraits/portrait2.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015175/Portraits/portrait2.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015176/Portraits/portrait3.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015176/Portraits/portrait3.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015169/Portraits/portrait4.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015169/Portraits/portrait4.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015175/Portraits/portrait5.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015175/Portraits/portrait5.jpg">
                             </a>
                         </div>                 
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015176/Portraits/portrait6.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015176/Portraits/portrait6.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015177/Portraits/portrait7.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015177/Portraits/portrait7.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="portraits-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015179/Portraits/portrait8.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015179/Portraits/portrait8.jpg">
                             </a>
                         </div>
                     
@@ -369,71 +434,55 @@
             </style>
 
 
-            <div class="container">
+            <div oncontextmenu="return false" class="container">
                 <div class="row">
                     <div class='list-group gallery'>
                     
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015206/Jewelry/jewel1.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015206/Jewelry/jewel1.jpg">
                             </a>
                         </div>                 
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015206/Jewelry/jewel2.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015206/Jewelry/jewel2.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015207/Jewelry/jewel3.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015207/Jewelry/jewel3.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015209/Jewelry/jewel4.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015209/Jewelry/jewel4.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015209/Jewelry/jewel5.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015209/Jewelry/jewel5.jpg">
                             </a>
                         </div>                 
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015209/Jewelry/jewel6.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015209/Jewelry/jewel6.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015209/Jewelry/jewel7.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015209/Jewelry/jewel7.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="jewelry-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015210/Jewelry/jewel8.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015210/Jewelry/jewel8.jpg">
                             </a>
                         </div>
                     
@@ -457,71 +506,55 @@
             </style>
 
 
-            <div class="container">
+            <div oncontextmenu="return false" class="container">
                 <div class="row">
                     <div class='list-group gallery'>
                     
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1474090241/Cityscapes/cityscape1.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1474090241/Cityscapes/cityscape1.jpg">
                             </a>
                         </div>                 
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015258/Cityscapes/cityscape2.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015258/Cityscapes/cityscape2.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015257/Cityscapes/cityscape3.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015257/Cityscapes/cityscape3.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015258/Cityscapes/cityscape4.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015258/Cityscapes/cityscape4.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015257/Cityscapes/cityscape5.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015257/Cityscapes/cityscape5.jpg">
                             </a>
                         </div>                 
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015255/Cityscapes/cityscape6.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015255/Cityscapes/cityscape6.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015255/Cityscapes/cityscape7.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015255/Cityscapes/cityscape7.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="cityscapes-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015255/Cityscapes/cityscape8.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015255/Cityscapes/cityscape8.jpg">
                             </a>
                         </div>
                     
@@ -544,71 +577,55 @@
             </style>
 
 
-            <div class="container">
+            <div oncontextmenu="return false" class="container">
                 <div class="row">
                     <div class='list-group gallery'>
                     
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015795/Urban%20Decay/urban1.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015795/Urban%20Decay/urban1.jpg">
                             </a>
                         </div>                 
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015820/Urban%20Decay/urban2.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015820/Urban%20Decay/urban2.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015796/Urban%20Decay/urban3.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015796/Urban%20Decay/urban3.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015798/Urban%20Decay/urban4.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015798/Urban%20Decay/urban4.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015797/Urban%20Decay/urban5.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015797/Urban%20Decay/urban5.jpg">
                             </a>
                         </div>                 
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015796/Urban%20Decay/urban6.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015796/Urban%20Decay/urban6.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015802/Urban%20Decay/urban9.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015802/Urban%20Decay/urban9.jpg">
                             </a>
                         </div>
                         
                         <div class='col-sm-4 col-xs-6 col-md-3 col-lg-3'>
-                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://placehold.it/1000x666.666666667.png">
-                            <img class="img-responsive" alt="" src="http://placehold.it/250x166.5.png">
-                            <div class='text-right'>
-                            </div> <!-- text-right / end -->
+                            <a class="thumbnail fancybox" rel="urban-decay-gallery" href="http://res.cloudinary.com/incypia/image/upload/v1473015802/Urban%20Decay/urban11.jpg">
+                            <img class="img-responsive" alt="" src="http://res.cloudinary.com/incypia/image/upload/t_site_thumb/v1473015802/Urban%20Decay/urban11.jpg">
                             </a>
                         </div>
                     
@@ -689,37 +706,18 @@
                         });
                     }  // End if
                 });
-            });
-            $(document).ready(function(){
-                // Add scrollspy to <body>
-                $('body').scrollspy({target: ".scrolly", offset: 50});
-
-                // Add smooth scrolling on all links inside the navbar
-                $("#scrollspy2 a").on('click', function(event) {
-                    // Make sure this.hash has a value before overriding default behavior
-                    if (this.hash !== "") {
-                        // Prevent default anchor click behavior
-                        event.preventDefault();
-
-                        // Store hash
-                        var hash = this.hash;
-
-                        // Using jQuery's animate() method to add smooth page scroll
-                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 800, function(){
-   
-                            // Add hash (#) to URL when done scrolling (default click behavior)
-                            window.location.hash = hash;
-                        });
-                    }  // End if
-                });
-            });
+            });           
             $(document).ready(function(){
                     //FANCYBOX
                     //https://github.com/fancyapps/fancyBox
-                    $(".fancybox").fancybox({
+                    $(".fancybox")
+                        .fancybox({
+                            beforeShow: function () {
+                                /* Disable right click */
+                                $.fancybox.wrap.bind("contextmenu", function (e) {
+                                    return false; 
+                                });
+                            },
                         openEffect: "elastic",
                         closeEffect: "elastic",
                         openSpeed: 100,
